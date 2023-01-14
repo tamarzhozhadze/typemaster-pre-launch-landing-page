@@ -69,7 +69,7 @@ header{
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
-    color: rgba(22, 37, 66, 1);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     text-transform: uppercase;
 }
@@ -93,12 +93,12 @@ header{
 .second-button:hover{
     background: rgba(255, 155, 98, 1);
     cursor: pointer;
-    color:rgba(255, 255, 255, 1);  
+    
 }
-.first-im-box{
+.first-img-box{
     overflow: hidden;
 }
-.first-img{
+.first-img-mobile{
     width: 373px;
     transform: translate(24px,0);
     border-top-left-radius: 20px;
@@ -106,13 +106,19 @@ header{
     margin-bottom: 17px;
     
 }
+.first-img-tablet{
+    display: none;
+}
 .img-box{
     display: flex;
     justify-content: start;
-    /* gap:18px; */
 }
-.phone-img{
+.phone-img-tablet{
+    display: none;
+}
+.phone-img-phone{
     width: 129px;
+    height: 193px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: rgba(241, 103, 24, 1);
@@ -127,16 +133,16 @@ header{
     transform: translate(-21px,0);
 }
 
-
-.glass-img{
+.glass-img-tablet{
+    display:none;
+}
+.glass-img-phone{
     width: 220px;
     border-radius: 20px;
     margin-right: 24px;
     
 }
-.mechanical-box{
-    
-}
+
 .second-title-style{
     font-family: Barlow;
     font-size: 32px;
@@ -223,4 +229,146 @@ header{
     line-height: 26px;
     margin-bottom: 50px;
 
+}
+@media(min-width:768px){
+    .introductory-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .first-img-mobile{
+        display: none;
+    }
+    .first-img-tablet{
+        display: block;
+        width:478px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+      
+    }
+    .header-logo{
+        margin-top: 49px;
+        margin-left: 39px;
+    }
+
+    .header-button{
+        margin-right: 40px;
+        margin-top: 40px;
+        width:150px;
+    }
+    .text-box{
+        width:339px;
+        margin-left: 39px;
+        margin-right: 75px;
+    }
+    .title-style{
+        margin-top: 131px;
+        margin-left: 0;
+        margin-bottom: 39px;
+        margin-right: 0;
+
+    }
+    .text-style{
+        margin-left: 0;
+        margin-bottom: 39px;
+        margin-right: 0;
+}
+    .second-button-position-box{
+        margin-bottom: 100px;
+        margin-left: 39px;
+        margin-right: 30px;
+    }
+    .second-button{
+        width:175px;
+    }
+    
+    .img-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 39px;
+        margin-left: 39px;
+    }
+    .phone-img-phone{
+        display: none;
+    }
+    .phone-img-tablet{
+        display: block;
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: rgba(241, 103, 24, 1);
+        opacity: 74.86%;
+        mix-blend-mode:multiply;
+        
+    }
+    .phone-img-background{
+        background: rgba(241, 103, 24, 1);
+        border-radius: 20px;
+        transform: translate(0,0);
+        margin-right: 30px;
+    }
+    .glass-img-phone{
+        display: none;
+    }
+    .glass-img-tablet{
+        display: block;
+        width: 445px;
+        height: 320px;
+        border-radius: 20px;
+        
+    }
+    .mechanical-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .second-title-style{
+            margin-top: 90px;
+            margin-left: 39px;
+            margin-right: px36;
+            text-align: start;
+    }
+    .second-text-style{
+        margin-top: 90px;
+        margin-right: px39;
+        text-align: start;
+    }
+    .icon-boxes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 176px 39px 142px 39px;
+        gap: 69px;
+    }
+    
+    .icon-box-title{
+        text-align: start;
+        margin: 40px 0 24px 0;
+        margin-right: 20px;
+    }
+    .icon-box-text{
+       text-align: start;
+       margin: 0 0 0 0;
+    }
+    .icon-one-box{
+        display: flex;
+        align-items: start;
+        margin:0 0 72px 0;
+    }
+    }
+    .icon-two-box{
+        display: flex;
+        align-items: start;
+        margin: 0 0 0 0;
+    }
+    .icon-four-box{
+        display: flex;
+        align-items: start;
+        margin: 72px 0 0 0;
+    }
+    .footer-style{
+        margin-bottom: 43px;
+    }
 }
